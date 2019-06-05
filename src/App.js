@@ -7,10 +7,9 @@ import {
 } from 'react-router-dom'
 
 import Home from './Home'
+import ArticleView from './ArticleView'
 import Navbar from './Navbar'
 import Footer from './Footer'
-
-import './news_style.css';
 
 class App extends React.Component {
   render(){
@@ -19,6 +18,10 @@ class App extends React.Component {
         <Navbar/>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route
+            path='/article/:title'
+            component = {ArticleView} />}
+          />
         </Switch>
         <Footer/>
       </Router>

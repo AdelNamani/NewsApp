@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 
-import './news_style.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

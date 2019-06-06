@@ -10,7 +10,7 @@ class ArticleCard extends React.Component{
                 {this.props.article.title}
                 <Link 
                     to={{
-                        pathname : 'article/'+articleLink,
+                        pathname : '/article/'+articleLink,
                         state : {
                             article : this.props.article
                         }

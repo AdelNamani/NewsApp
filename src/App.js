@@ -8,6 +8,7 @@ import {
 
 import Home from './Home'
 import ArticleView from './ArticleView'
+import CategoryView from './CategoryView'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -17,10 +18,18 @@ class App extends React.Component {
       <Router>
         <Navbar/>
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route 
+            exact 
+            path='/' 
+            component={Home}
+          />
           <Route
             path='/article/:title'
             component = {ArticleView} />}
+          />
+          <Route 
+            path='/category/:category_name'
+            component = {CategoryView}
           />
         </Switch>
         <Footer/>

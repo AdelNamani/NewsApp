@@ -15,8 +15,7 @@ class Home extends React.Component {
         }
     }
 
-    componentDidMount() {
-        
+    componentDidMount() { 
         axios.get('https://newsapi.org/v2/top-headlines?language=en',
         {
             headers : {
